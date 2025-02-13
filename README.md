@@ -40,7 +40,6 @@ Para executar este projeto, você precisará das seguintes ferramentas e pacotes
   - `dplyr`: Para manipulação de dados.
   - `duckdb`: Para leitura e processamento eficiente de arquivos Parquet.
   - `tibble`: Para trabalhar com tibbles (uma versão moderna de data frames).
-- Opcional:
 
 Instale os pacotes necessários com o seguinte comando:
 
@@ -171,17 +170,8 @@ O projeto organiza os dados nas seguintes pastas:
 
 ---
 
-## **Como Executar o Projeto**
+Link do projeto na Open Science Framework (OSF): https://osf.io/9gbh3/
 
-1. Clone este repositório ou copie o código para o seu ambiente R.
-2. Instale os pacotes necessários (caso ainda não os tenha).
-3. Execute o script no RStudio ou em um terminal R.
-4. Escolha entre processar os dados brutos ou usar os dados já agregados.
-
----
-
-Flávio Hugo Pangracio Silva
-
-[GitHub](https://github.com/flaviohugo14) | [LinkedIn](https://linkedin.com/in/flaviopangracio)
+Flávio Hugo Pangracio Silva | [GitHub](https://github.com/flaviohugo14) | [LinkedIn](https://linkedin.com/in/flaviopangracio)
 
 ---
