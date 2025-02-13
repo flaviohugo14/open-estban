@@ -35,12 +35,20 @@ Para executar este projeto, você precisará das seguintes ferramentas e pacotes
 
 - **R** (versão 4.0 ou superior)
 - **Pacotes R**:
+  - `renv`: Para lidar com versão de pacotes.
   - `osfr`: Para interagir com o Open Science Framework (OSF) e fazer o download dos dados.
   - `dplyr`: Para manipulação de dados.
   - `duckdb`: Para leitura e processamento eficiente de arquivos Parquet.
   - `tibble`: Para trabalhar com tibbles (uma versão moderna de data frames).
+- Opcional:
 
 Instale os pacotes necessários com o seguinte comando:
+
+```R
+install.packages("renv")
+renv::restore()
+```
+ou instale manualmente:
 
 ```R
 install.packages(c("osfr", "dplyr", "duckdb", "tibble"))
