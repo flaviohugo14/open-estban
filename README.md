@@ -100,6 +100,8 @@ files |>
   osfr::osf_download(path = "download/")
 ```
 
+OBS: Talvez seja necessário criar as pastas `data` e `download`, manualmente.
+
 #### **1.4. Descompactar os Dados**
 O arquivo ZIP baixado é descompactado na pasta `data/`:
 
