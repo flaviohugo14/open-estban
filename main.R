@@ -62,7 +62,11 @@ DBI::dbExecute(
       SUM(\"176\") AS operacoes_especiais,
       SUM(\"399\") AS total_ativo,
       SUM(\"401_402_404_411_412_413_414_415_416_417_418_419\") AS depositos_a_vista,
-      SUM(\"420\") AS depositos_a_prazo
+      SUM(\"420\") AS depositos_a_prazo,
+      SUM(CASE WHEN cnpj = '00000000' THEN 1 ELSE 0 END) as agencias_bb,
+      SUM(CASE WHEN cnpj = '00360305' THEN 1 ELSE 0 END) as agencias_caixa,
+      SUM(CASE WHEN cnpj IN ('00360305', '00000000') THEN 0 ELSE 1 END) as outras_agencias,
+      COUNT(DISTINCT cnpj_agencia) as total_agencias
     FROM
       parquet_scan('", PATH_PARQUET_FILES, "') 
     WHERE cod_mun_ibge IS NOT NULL

@@ -26,6 +26,15 @@
 | **total_ativo**                  | 399                 | FLOAT      | Valor total do **ativo**.                                                    |
 | **depositos_a_vista**            | 401_402_404_411_412_413_414_415_416_417_418_419 | FLOAT | Valor total dos **depósitos à vista** (governos e setor privado). |
 | **depositos_a_prazo**            | 420                 | FLOAT      | Valor total dos **depósitos a prazo**.                                        |
+| **agencias_bb**                  | -                   | INTEGER    | Número de **agências do Banco do Brasil** no município (contagem por CNPJ).  |
+| **agencias_caixa**               | -                   | INTEGER    | Número de **agências da Caixa Econômica Federal** no município (contagem por CNPJ). |
+| **outras_agencias**              | -                   | INTEGER    | Número de **agências de outros bancos** no município (contagem por CNPJ).    |
+| **total_agencias**               | -                   | INTEGER    | **Total de agências bancárias** no município (soma de todas as contagens).   |
+
+---
+
+## Requisitos
+... (restante do README permanece igual)                                   |
 
 ---
 
